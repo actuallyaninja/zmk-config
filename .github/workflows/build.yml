@@ -33,9 +33,9 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build (NIBBLE)
+      - name: West Build (NICENANOSINC)
         run: west build -s zmk/app -b nice_nano -- -DSHIELD=nicenanosinc -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: NIBBLE DTS File
+      - name: NICENANOSINC DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano.dts.pre.tmp
       - name: NICENANOSINC Kconfig file
