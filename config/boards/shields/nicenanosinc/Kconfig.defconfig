@@ -1,0 +1,6 @@
+if SHIELD_NICENANOSINC
+
+config ZMK_KEYBOARD_NAME
+    default "nice!nanoSinc"
+
+endif
