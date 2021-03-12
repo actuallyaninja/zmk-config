@@ -1,6 +1,3 @@
-/*
- * nicenanosinc keymap
- */
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -45,6 +42,7 @@
     &trans     &trans       &trans       &trans       &trans &trans &trans /**/ &trans &trans &trans &trans  &trans  &trans  &trans &trans
     &trans     &trans       &trans       &trans       &trans &trans &trans /**/ &trans &trans &trans &trans  &trans  &trans  &trans &trans
     &trans     &trans       &trans       &trans       &trans &trans &trans /**/ &trans &trans &trans &trans  &trans  &trans  &trans &trans
+	&trans     &trans       &trans       &trans       &trans &trans &trans /**/ &trans &trans &trans &trans  &trans  &trans  &trans &trans
             >;
         };
     };
