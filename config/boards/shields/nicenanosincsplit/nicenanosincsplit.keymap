@@ -7,14 +7,14 @@
     keymap {
         compatible = "zmk,keymap";
 
-// ----------------------------------------------         ----------------------------------------------------
-// | ESC    |  F1  |  F2 |  F3  |  F4 |  F5 |  F6 |      |  F7 |  F8 |  F9 | F10 | F11 | F12 |    INS | DEL  |
-// | GRAVE |  1   |  2  |  3   |  4  |  5  |  6  |      |  7  |  8  |  9  |  0  |  -  |  =  |   BKSPC | HOME |
-// | TAB   |  Q   |  W  |  E   |  R  |  T  |          |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  \  | PGUP |
-// | CAPS  |  A   |  S  |  D   |  F  |  G  |           |  H  |  J  |  K  |  L  |  ;  |  '  |   ENTER  | PGDN |
-// | SHIFT   |  Z   |  X  |  C  |  V   |  B  |          |  N  |  M  |  ,  |  .  |  /  |  RSHFT  |  UP | END  |
-// | LCTRL   | LGUI | LALT |   SPACE   | FN  |          |    SPACE    | RALT | FN | RCTRL | LFT | DWN | RGHT |
-// -------------------------------------------          ------------------------------------------------------
+// ------------------------------------------------      ----------------------------------------------------
+// | ESC    |  F1  |  F2 |  F3  |  F4 |  F5 |  F6 |      |  F7 |  F8 |  F9 | F10 | F11 | F12 |    INS | DEL |
+// |GRAVE|  1  |  2  |  3   |  4  |  5  |  6  |       |  7  |  8  |  9  |  0  |  -  |  =  |   BKSPC   | HOME|
+// | TAB  |  Q   |  W  |  E   |  R  |  T  |          |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  \   | PGUP|
+// | CAPS  |  A   |  S  |  D   |  F  |  G  |           |  H  |  J  |  K  |  L  |  ;  |  '  |   ENTER  | PGDN|
+// | SHIFT   |  Z   |  X  |  C  |  V   |  B  |          |  N  |  M  |  ,  |  .  |  /  |  RSHFT  |  UP | END |
+// | LCTRL | LGUI | FN  |  ALT  |  SPACE     |          |   SPACE    | RALT | RCTRL | FN  | LFT | DWN | RGHT|
+// -------------------------------------------          -----------------------------------------------------
 
         default_layer {
             bindings = <
@@ -27,23 +27,23 @@
             >;
         };
 
-// ----------------------------------------------      -------------------------------------------------------
-// |BT_CLR|      |     |      |     |     |     |      |  7  |  8  |  9  |     |     |        |OUT_TOG|BT_CLR|
-// |       | BT-0 | BT-1| BT-2 | BT-3|     |        |     |  4  |  5  |  6  |     |     |     |       |      |
-// |        |      |     |      |     |     |        |     |  1  |  2  |  3  |     |     |            |BT_NXT|
-// |         |      |     |     |      |     |        |     |     |     |     |     |         |       |BT_PRV|
-// |           |     |     |     |      |     |         |     |     |     |     |     |       |       |      |
-// |         |      |      |  RET |   BSPC   |         |      0     |      |    |       |     |       |      |
-// -------------------------------------------         -------------------------------------------------------
+// ----------------------------------------------        ------------------------------------------------------
+// |BT_CLR| MUTE | V_DN| V_UP|     |      |     |        |     |     |     |     |     |       |OUT_TOG|BT_CLR|
+// |O_TOG| BT-0 | BT-1| BT-2 | BT-3|     |     |        |  7  |  8  |  9  |     |     |     |          |      |
+// |      |      |     |      |     |      |          |     |  4  |  5  |  6  |     |     |     |      |BT_NXT|
+// |       |      |     |     |      |      |          |     |  1  |  2  |  3  |     |       |         |BT_PRV|
+// |         |     |     |     |      |      |           |     |     |     |     |     |         |     |      |
+// |        |       |      | ENTR |   BSPC   |           |      0      |      |      |     |     |     |      |
+// -------------------------------------------           ------------------------------------------------------
 
         fn_layer {
             bindings = <
-&bt BT_CLR &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE   &trans       &trans      &trans /**/ &trans &trans &trans &trans &trans  &trans  &trans  &out OUT_TOG    &bt BT_CLR
-&trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans      &trans /**/ &trans &kp N7 &kp N8 &kp N9 &trans  &trans  &trans  &trans          &trans 
-&trans     &trans       &kp UP       &trans       &trans       &trans      &trans /**/ &trans &kp N4 &kp N5 &kp N6 &trans  &trans  &trans  &trans          &bt BT_NXT
-&trans     &kp LEFT     &kp DOWN     &kp RIGHT    &trans       &trans      &trans /**/ &trans &trans &kp N1 &kp N2 &kp N3  &trans  &trans  &trans          &bt BT_PRV
-&trans     &trans       &trans       &trans       &trans       &trans      &trans /**/ &trans &trans &trans &trans &trans  &trans  &trans  &trans          &trans
-&trans     &trans       &trans       &kp RET      &kp BSPC     &trans      &trans /**/ &trans &kp N0 &trans &trans &trans  &trans  &trans  &trans          &trans
+&bt BT_CLR   &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP &trans       &trans      &trans /**/ &trans &trans &trans &trans &trans  &trans  &trans  &out OUT_TOG    &bt BT_CLR
+&out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans      &trans /**/ &trans &kp N7 &kp N8 &kp N9 &trans  &trans  &trans  &trans          &trans 
+&trans       &trans       &kp UP       &trans       &trans       &trans      &trans /**/ &trans &kp N4 &kp N5 &kp N6 &trans  &trans  &trans  &trans          &bt BT_NXT
+&trans       &kp LEFT     &kp DOWN     &kp RIGHT    &trans       &trans      &trans /**/ &trans &trans &kp N1 &kp N2 &kp N3  &trans  &trans  &trans          &bt BT_PRV
+&trans       &trans       &trans       &trans       &trans       &trans      &trans /**/ &trans &trans &trans &trans &trans  &trans  &trans  &trans          &trans
+&trans       &trans       &trans       &kp RET      &kp BSPC     &trans      &trans /**/ &trans &kp N0 &trans &trans &trans  &trans  &trans  &trans          &trans
             >;
         };
     };
