@@ -1,6 +1,6 @@
 if SHIELD_MAYPADNICENANO
 
 config ZMK_KEYBOARD_NAME
-    default "MayPad nice!nano"
+    default "MayPadnice!nano"
 
 endif
