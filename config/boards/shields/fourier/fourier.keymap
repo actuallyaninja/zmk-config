@@ -16,8 +16,8 @@
 
         default_layer {
             bindings = <
-&kp TAB   &kp Q    &kp W    &kp E     &kp R     &kp T  	    &trans    /**/ &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  
-&kp CAPS  &kp A    &kp S    &kp D     &kp F     &kp G       &trans    /**/ &trans    &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   
+&kp ESC   &kp Q    &kp W    &kp E     &kp R     &kp T  	    &trans    /**/ &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT  &kp RBKT  
+&kp TAB   &kp A    &kp S    &kp D     &kp F     &kp G       &trans    /**/ &trans    &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   
 &kp LSHFT &kp Z    &kp X    &kp C     &kp V     &kp B       &trans    /**/ &trans    &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT 
 &kp LCTRL &kp LGUI &mo 1    &kp LALT  &kp SPACE &trans      &trans    /**/ &trans    &kp SPACE &trans    &kp RALT  &kp RCTRL &mo 1     &kp LEFT  
             >;
@@ -25,19 +25,17 @@
 
 // ----------------------------------------------        ----------------------------------------
 // |BT_CLR| MUTE | V_DN| V_UP|     |      |     |        |     |     |     |     |     |        |
-// |O_TOG| BT-0 | BT-1| BT-2 | BT-3|     |     |        |  7  |  8  |  9  |     |     |         |
-// |      |      |     |      |     |      |          |     |  4  |  5  |  6  |     |     |     |
-// |       |      |     |     |      |      |          |     |  1  |  2  |  3  |     |       |
-// |         |     |     |     |      |      |           |     |     |     |     |     |         |
+// |O_TOG| BT-0 | BT-1| BT-2 | BT-3|     |  UP |        |     |     |     |     |     |         |
+// |         |     |     |  DN |  LFT |  RT |           |     |     |     |     |     |         |
 // |        |       |      | ENTR |   BSPC   |           |      0      |      |      |     |     |
 // -------------------------------------------           -----------------------------------------
 
         fn_layer {
             bindings = <
 &bt BT_CLR   &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP &trans       &trans      &trans /**/ &trans &trans &trans &trans &trans  &trans  &trans
-&out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans      &trans /**/ &trans &kp N7 &kp N8 &kp N9 &trans  &trans  &trans
-&trans       &trans       &kp UP       &trans       &trans       &trans      &trans /**/ &trans &kp N4 &kp N5 &kp N6 &trans  &trans  &trans
-&trans       &kp LEFT     &kp DOWN     &kp RIGHT    &trans       &trans      &trans /**/ &trans &trans &kp N1 &kp N2 &kp N3  &trans  &trans
+&out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp UP      &trans /**/ &trans &kp N7 &kp N8 &kp N9 &trans  &trans  &trans
+&trans       &trans       &trans       &kp LEFT     &kp DOWN     &kp RIGHT   &trans /**/ &trans &kp N4 &kp N5 &kp N6 &trans  &trans  &trans
+&trans       &trans       &trans       &trans       &kp ENTER    &kp BSPC    &trans /**/ &trans &trans &kp N1 &kp N2 &kp N3  &trans  &trans
             >;
         };
     };
