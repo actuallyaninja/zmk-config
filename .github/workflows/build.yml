@@ -74,3 +74,31 @@ jobs:
         with:
           name: maypadnicenano-fw
           path: maypadnicenano.uf2
+          
+      - name: West Build (Fourier Left)
+        run: west build -p -s zmk/app -b nice_nano -- -DSHIELD=fourier_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Fourier Left DTS File
+        if: ${{ always() }}
+        run: cat -n build/zephyr/nice_nano.dts.pre.tmp
+      - name: Fourier Left Kconfig file
+        run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
+      - name: Rename zmk.uf2
+        run: cp build/zephyr/zmk.uf2 fourier_left.uf2
+      - name: Archive (Fourier Left)
+        uses: actions/upload-artifact@v2
+        with:
+          name: Fourierfw-left
+          path: fourier_left.uf2
+      
+      - name: West Build (Fourier Right)
+        run: west build -p -s zmk/app -b nice_nano -- -DSHIELD=fourier_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Fourier Right Kconfig file
+        run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
+      - name: Rename zmk.uf2
+        run: cp build/zephyr/zmk.uf2 fourier_right.uf2
+      - name: Archive (Fourier Right)
+        uses: actions/upload-artifact@v2
+        with:
+          name: Fourierfw-right
+          path: fourier_right.uf2
+          
