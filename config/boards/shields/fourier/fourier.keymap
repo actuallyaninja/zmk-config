@@ -16,8 +16,8 @@
 
         default_layer {
             bindings = <
-&kp ESC   &kp Q    &kp W    &kp E     &kp R     &kp T  	    &trans    /**/ &kp Y     &kp U     &kp I     &kp O     &kp P     &kp LBKT  &kp DEL  
-&kp TAB   &kp A    &kp S    &kp D     &kp F     &kp G       &trans    /**/ &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT   &kp BSPC
+&kp ESC   &kp Q    &kp W    &kp E     &kp R     &kp T  	    &trans    /**/ &kp Y     &kp U     &kp I     &kp O     &kp P     &kp DEL   &kp BACKSPACE  
+&kp TAB   &kp A    &kp S    &kp D     &kp F     &kp G       &trans    /**/ &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp BSPC  &kp BSPC
 &kp LSHFT &kp Z    &kp X    &kp C     &kp V     &kp B       &trans    /**/ &kp N     &trans    &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT 
 &kp LCTRL &kp LGUI &mo 1    &kp LALT  &kp SPACE &trans      &trans    /**/ &kp SPACE &trans    &kp BSLH  &kp RALT  &kp BSLH  &mo 1     &kp RCTRL  
             >;
@@ -27,8 +27,8 @@
 // |BT_CLR| MUTE | V_DN| V_UP|     |      |     |        |     |     |     |     |     |        |
 // |O_TOG| BT-0 | BT-1| BT-2 | BT-3|     |  UP |        |     |     |     |     |     |         |
 // |         |     |     |  DN |  LFT |  RT |           |     |     |     |     |     |         |
-// |        |       |      | ENTR |   BSPC   |           |      0      |      |      |     |     |
-// -------------------------------------------           -----------------------------------------
+// |        |       |      | ENTR |   BSPC   |           |      0      |      |      |     |    |
+// -------------------------------------------           ----------------------------------------
 
         fn_layer {
             bindings = <
