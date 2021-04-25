@@ -1,6 +1,6 @@
 on: [push, pull_request, workflow_dispatch]
 
-name: Build
+name: nicenanosincsplit
 
 jobs:
   build:
@@ -33,31 +33,29 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-        
-      - name: West Build (Lily58 Left)
-        run: west build -p -s zmk/app -b nice_nano -- -DSHIELD=lily58_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Lily58 Left DTS File
+      - name: West Build (nicenanosincsplit Left)
+        run: west build -s zmk/app -b nice_nano -- -DSHIELD=nicenanosincsplit_left -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: nicenanosincsplit DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano.dts.pre.tmp
-      - name: Lily58 Left Kconfig file
+      - name: nicenanosincsplit Left Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 lily58_left.uf2
-      - name: Archive (Lily58 Left)
+        run: cp build/zephyr/zmk.uf2 nicenanosincsplit_left_nice_nano.uf2
+      - name: Archive (nicenanosincsplit Left)
         uses: actions/upload-artifact@v2
         with:
-          name: Lily58fw-left
-          path: lily58_left.uf2
-      
-      - name: West Build (Lily58 Right)
-        run: west build -p -s zmk/app -b nice_nano -- -DSHIELD=lily58_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Lily58 Right Kconfig file
+          name: nicenanosincsplit
+          path: nicenanosincsplit_left_nice_nano.uf2
+      - name: West Build (nicenanosincsplit Right)
+        run: west build --pristine -s zmk/app -b nice_nano -- -DSHIELD=nicenanosincsplit_right -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+
+      - name: nicenanosincsplit Right Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 lily58_right.uf2
-      - name: Archive (Lily58 Right)
+        run: cp build/zephyr/zmk.uf2 nicenanosincsplit_right_nice_nano.uf2
+      - name: Archive (nicenanosincsplit Right)
         uses: actions/upload-artifact@v2
         with:
-          name: Lily58fw-right
-          path: lily58_right.uf2
-          
+          name: nicenanosincsplit
+          path: nicenanosincsplit_right_nice_nano.uf2
