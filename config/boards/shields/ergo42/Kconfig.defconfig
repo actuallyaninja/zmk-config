@@ -12,7 +12,7 @@ endif
 if SHIELD_ERGO42_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "ERGO42 Right"
+	default "Ergo42 Right"
 
 endif
 
