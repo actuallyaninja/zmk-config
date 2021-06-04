@@ -38,9 +38,9 @@
   // |------+------+------+------+------+------+------|   |-------------+------+------+------+------+------|
   // |      |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
   // |------+------+------+------+------+------+------|   |------|------+------+------+------+------+------|
-  // |      |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
+  // |      |      |      |      |      |      |      |   |      |      |      |      |      | PGUP |      |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
-  // |      |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
+  // |      |      |      |      |      |      |      |   |      |      |      |      |      | PGDN |      |
   // `------------------------------------------------'   `------------------------------------------------'
   //
         meta_layer {
@@ -48,8 +48,8 @@
 &trans  &trans  &kp F1  &kp F2  &kp F3   &kp F4  &kp F5   /**/ &kp F6   &kp F7   &kp F8   &kp F9  &kp F10   &kp F11   &kp F12
 &trans  &trans  &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &kp PG_UP &trans
+&trans  &trans  &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &kp PG_DN &trans
             >;
         };
 
@@ -61,18 +61,18 @@
   // |------+------+------+------+------+------+------|   |------|------+------+------+------+------+------|
   // |      |      |      |      |      |      |      |   |      |   1  |   2  |   3  |      |      |      |
   // |------+------+------+------+------+------+------|   |------|------+------+------+------+------+------|
-  // |      |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
+  // |      |      |      |      |      |      |      |   |      |      |      |      |      | PGUP |      |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
-  // |  BT  |      |      |      |      |      |      |   |   0  |      |      |      |      |      |      |
+  // |  BT  |      |      |      |      |      |      |   |   0  |      |      |      |      | PGDN |      |
   // `------------------------------------------------'   `------------------------------------------------'
   //
         symb_layer {
             bindings = <
-&trans  &trans   &trans    &trans   &trans     &trans      &trans /**/ &trans    &kp N7   &kp N8    &kp N9   &trans   &trans   &trans
-&trans  &trans   &trans    &trans   &trans     &trans      &trans /**/ &trans    &kp N4   &kp N5    &kp N6   &trans   &trans   &trans
-&trans  &trans   &trans    &trans   &trans     &trans      &trans /**/ &trans    &kp N1   &kp N2    &kp N3   &trans   &trans   &trans
-&trans  &trans   &trans    &trans   &trans     &trans      &trans /**/ &trans    &trans   &trans    &trans   &trans   &trans   &trans
-&mo 3   &trans   &trans    &trans   &trans     &trans      &trans /**/ &kp N0    &trans   &trans    &trans   &trans   &trans   &trans
+&trans  &trans   &trans    &trans   &trans     &trans      &trans /**/ &trans    &kp N7   &kp N8    &kp N9   &trans   &trans    &trans
+&trans  &trans   &trans    &trans   &trans     &trans      &trans /**/ &trans    &kp N4   &kp N5    &kp N6   &trans   &trans    &trans
+&trans  &trans   &trans    &trans   &trans     &trans      &trans /**/ &trans    &kp N1   &kp N2    &kp N3   &trans   &trans    &trans
+&trans  &trans   &trans    &trans   &trans     &trans      &trans /**/ &trans    &trans   &trans    &trans   &trans   &kp PG_UP &trans
+&mo 3   &trans   &trans    &trans   &trans     &trans      &trans /**/ &kp N0    &trans   &trans    &trans   &trans   &kp PG_DN &trans
             >;
         };
 
