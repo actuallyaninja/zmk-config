@@ -11,9 +11,9 @@
   // ,------------------------------------------------.   ,------------------------------------------------.
   // | ESC  | Tab  |   1  |   2  |   3  |   4  |  5   |   |  6   |   7  |   8  |   9  |   0  | Del  | Bksp |
   // |------+------+------+------+------+------+------|   |-------------+------+------+------+------+------|
-  // |  -   |  =   |   Q  |   W  |   E  |   R  |  T   |   |  Y   |   U  |   I  |   O  |   P  |   `  |  \   |
+  // |  -   |  =   |   Q  |   W  |   E  |   R  |  T   |   |  Y   |   U  |   I  |   O  |   P  | PGDN | PGUP |
   // |------+------+------+------+------+------+------|   |-------------+------+------+------+------+------|
-  // | Del  | RCtrl|   A  |   S  |   D  |   F  |  G   |   |  H   |   J  |   K  |   L  |   ;  |   '  | Enter|
+  // |  `   |  \   |   A  |   S  |   D  |   F  |  G   |   |  H   |   J  |   K  |   L  |   ;  |   '  | Enter|
   // |------+------+------+------+------+------+------|   |------|------+------+------+------+------+------|
   // | SYMB | LSft |   Z  |   X  |   C  |   V  |  B   |   |  N   |   M  |   ,  |   .  |   /  |  UP  | RSft |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
@@ -32,24 +32,24 @@
 
   // META
   // ,------------------------------------------------.   ,------------------------------------------------.
-  // |      |      |  F1  |  F2  |  F3  |  F4  |  F5  |   |  F6  |  F7  |  F8  |  F9  | F10  | F11  | F12  |
+  // |  ~   |      |  F1  |  F2  |  F3  |  F4  |  F5  |   |  F6  |  F7  |  F8  |  F9  | F10  | F11  | F12  |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
   // |      |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
   // |------+------+------+------+------+------+------|   |-------------+------+------+------+------+------|
   // |      |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
   // |------+------+------+------+------+------+------|   |------|------+------+------+------+------+------|
-  // |      |      |      |      |      |      |      |   |      |      |      |      |      | PGUP |      |
+  // |      | CAPS |      |      |      |      |      |   |      |      |      |      |      | PGUP |      |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
   // |      |      |      |      |      |      |      |   |      |      |      |      |      | PGDN |      |
   // `------------------------------------------------'   `------------------------------------------------'
   //
         meta_layer {
             bindings = <
-&trans  &trans  &kp F1  &kp F2  &kp F3   &kp F4  &kp F5   /**/ &kp F6   &kp F7   &kp F8   &kp F9  &kp F10   &kp F11   &kp F12
-&trans  &trans  &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &kp PG_UP &trans
-&trans  &trans  &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &kp PG_DN &trans
+&kp TILDE &trans   &kp F1  &kp F2  &kp F3   &kp F4  &kp F5   /**/ &kp F6   &kp F7   &kp F8   &kp F9  &kp F10   &kp F11   &kp F12
+&trans    &trans   &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &trans    &trans
+&trans    &trans   &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &trans    &trans
+&trans    &kp CAPS &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &kp PG_UP &trans
+&trans    &trans   &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &kp PG_DN &trans
             >;
         };
 
@@ -78,9 +78,9 @@
 
   // BT 
   // ,------------------------------------------------.   ,------------------------------------------------.
-  // |BT_CLR| BT0  | BT1  | BT2  | BT3  | BT4  |      |   |      |      |      |      |      |      |      |
+  // |BT_CLR|TOGGLE| BT1  | BT2  | BT3  | BT4  | BT5  |   |      |      |      |      |      |      |      |
   // |------+------+------+------+------+------+------|   |-------------+------+------+------+------+------|
-  // |TOGGLE|      |      |      |      |      |      |   |      |      |      |      |      |      |      |
+  // |      |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
   // |------+------+------+------+------+------+------|   |------|------+------+------+------+------+------|
   // |      |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
@@ -91,11 +91,11 @@
   //
         bt_layer {
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans /**/ &trans  &trans  &trans  &trans &trans   &trans   &trans
-&out OUT_TOG &trans       &trans       &trans       &trans       &trans       &trans /**/ &trans  &trans  &trans  &trans &trans   &trans   &trans
-&trans       &trans       &trans       &trans       &trans       &trans       &trans /**/ &trans  &trans  &trans  &trans &trans   &trans   &trans
-&trans       &trans       &trans       &trans       &trans       &trans       &trans /**/ &trans  &trans  &trans  &trans &trans   &trans   &trans
-&trans       &trans       &trans       &trans       &trans       &trans       &trans /**/ &trans  &trans  &trans  &trans &trans   &trans   &trans
+&bt BT_CLR   &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 /**/ &trans  &trans  &trans  &trans &trans   &trans   &trans
+&trans       &trans       &trans       &trans       &trans       &trans       &trans       /**/ &trans  &trans  &trans  &trans &trans   &trans   &trans
+&trans       &trans       &trans       &trans       &trans       &trans       &trans       /**/ &trans  &trans  &trans  &trans &trans   &trans   &trans
+&trans       &trans       &trans       &trans       &trans       &trans       &trans       /**/ &trans  &trans  &trans  &trans &trans   &trans   &trans
+&trans       &trans       &trans       &trans       &trans       &trans       &trans       /**/ &trans  &trans  &trans  &trans &trans   &trans   &trans
             >;
         };
 
