@@ -1,12 +1,12 @@
 # zmk-config
 Repo to set up ZMK firmware builds
 
-Boards with config files include some that are standard boards, 
-just customized with my keympaps, plus some boards that were not 
-set up in zmk which I've built and configured here. Some of the 
-boards that I ported into ZMK include:
+This repo includes config files for some keyboards that are 
+already part of the main ZMK repo, just customized with my key maps, 
+plus some that were not set up in ZMK which I've added support for here. 
+Some of the keyboards that I've added support for in ZMK include:
 
-Keeb.io designed boards:
+Keeb.io designed boards ported into ZMK:
 
 - Viterbi, a split 5X7 (x2) ortholinear keyboard
 - Fourier, a split 40% staggered keyboard
@@ -17,7 +17,12 @@ Other boards:
 - Ergo42, a split 4x7 (x2) ortholinear board designed by Biacco42
 - May pad, a numpad designed by u/reggatronics
 
-Other board(s) that I have a config for that were part of the main zmk repo:
+*Note: Fourier, handwired Sinc, Ergo42, and May pad are only currently compatible 
+with nice!nano pinouts. I will plan on updating them to support all promicro 
+compatible controllers, but was just too lazy to do it yet.
+
+
+Other board(s) that I have my own config for that were part of the main zmk repo:
 
 - Helix
 - Lily58
