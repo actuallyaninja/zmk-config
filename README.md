@@ -8,7 +8,7 @@ Some of the keyboards that I've added support for in ZMK include:
 
 Keeb.io designed boards ported into ZMK:
 
-- Viterbi, a split 5X7 (x2) ortholinear keyboard
+- Viterbi, a split 5x7 (x2) ortholinear keyboard
 - Fourier, a split 40% staggered keyboard
 - A hand-wired board using the plates from the Sinc 75% split staggered keyboard
 
