@@ -10,19 +10,19 @@ Keeb.io designed boards ported into ZMK:
 
 - Viterbi, a split 5x7 (x2) ortholinear keyboard
 - Fourier, a split 40% staggered keyboard
-- A hand-wired board using the plates from the Sinc 75% split staggered keyboard
+- A hand-wired board using the plates from the Keeb.io Sinc 75% split staggered keyboard
 
 Other boards:
 
 - Ergo42, a split 4x7 (x2) ortholinear board designed by Biacco42
 - May pad, a numpad designed by u/reggatronics
 
-*Note: Fourier, handwired Sinc, Ergo42, and May pad are only currently compatible 
-with nice!nano pinouts. I will plan on updating them to support all promicro 
+*Note: Handwired Sinc and May pad are only currently compatible 
+with nice!nano pinouts. I plan on updating them to support all promicro 
 compatible controllers, but was just too lazy to do it yet.
 
 
-Other board(s) that I have my own config for that were part of the main zmk repo:
+Other board(s) that I have my own config for that were already part of the main zmk repo:
 
 - Helix
 - Lily58
