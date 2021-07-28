@@ -46,8 +46,8 @@
  //    |      |      |      |      |      |      |      |                        |      |      |      | MUTE |      | PGDN |      |
                      bindings = <
        &kp GRAVE &kp F1   &kp F2   &kp F3    &kp F4    &kp F5                           &kp F6    &kp F7    &kp F8     &kp F9    &kp F10   &kp DEL
-       &trans    &trans   &kp UP   &trans    &trans    &kp LBKT                         &kp RBKT  &trans    &trans     &kp LPAR  &kp RPAR  &kp F12
-       &trans    &kp LEFT &kp DOWN &kp RIGHT &trans    &kp LBRC                         &kp RBRC  &kp HOME  &kp PG_UP  &kp PG_DN &kp END   &kp PIPE
+       &trans    &trans   &kp UP   &trans    &trans    &kp LBRC                         &kp RBRC  &trans    &trans     &kp LPAR  &kp RPAR  &kp F12
+       &trans    &kp LEFT &kp DOWN &kp RIGHT &trans    &kp LBKT                         &kp RBKT  &kp HOME  &kp PG_UP  &kp PG_DN &kp END   &kp PIPE
        &trans    &trans   &trans   &trans    &trans    &trans    &kp LPAR      &kp RPAR &trans    &trans    &trans     &trans    &kp PG_UP &trans
        &trans    &trans   &trans   &trans    &trans    &trans    &trans        &trans   &trans    &trans    &kp C_MUTE &trans    &kp PG_DN &trans
                      >;
