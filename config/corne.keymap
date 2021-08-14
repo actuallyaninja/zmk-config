@@ -47,7 +47,7 @@
 // |      |     |     |     |     |     |   |  =  |  ~  |  [  |  ]  |  \  |     | // TODO: Fix this row when &mkp is committed
 //                    |     |     |     |   | ENT |     | ALT |
                         bindings = <
-   &trans    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
+   &kp ESC   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
    &trans    &trans    &trans  &trans    &trans    &kp UNDER   &kp PLUS  &trans    &kp LBRC        &kp RBRC &kp PIPE &kp GRAVE
    &trans    &trans    &trans  &trans    &trans    &kp MINUS   &kp EQUAL &kp TILDE &kp LBKT        &kp RBKT &kp BSLH &trans
                                    &trans   &trans &trans      &trans  &trans &trans
