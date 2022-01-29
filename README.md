@@ -16,8 +16,9 @@ Other boards:
 
 - Ergo42, a split 4x7 (x2) ortholinear board designed by Biacco42
 - May pad, a numpad designed by u/reggatronics
+- Sofle Rev2
 
-*Note: Handwired Sinc and May pad are only currently compatible 
+*Note: Handwired Sinc and May pad configs are only currently compatible 
 with nice!nano pinouts. I plan on updating them to support all promicro 
 compatible controllers, but was just too lazy to do it yet.
 
