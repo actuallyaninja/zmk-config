@@ -1,0 +1,6 @@
+if SHIELD_ORTHOSNAP
+
+config ZMK_KEYBOARD_NAME
+    default "orthosnap"
+
+endif
