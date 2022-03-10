@@ -70,18 +70,18 @@
                      >;
               };
               BTLAYER_layer {
- // -------------------------------------------------------------------                       -----------------------------------------------------------------------------------------
- // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BT SEL3  | BT SEL4  |                       |               |               |               |               |                |      |
- // | OUT TOG  | OUT USB  | OUT BLE  |          |          |          |                       |               |               |               |               |                |      |
- // |          |          |          |          |          |          |                       |     Eff+      |      HUI      |      SAI      |      BRI      |      SPI       |      |
- // |          |          |          |          |          |          |                       |     Eff-      |      HUD      |      SAD      |      BRD      |      SPD       | ENT  |
- // |          |          |          |          |          |          |                       |  RGB TOGGLE   |               |               |               |                |      |
+ //   ------------------------------------------------------------------------------                 ------------------------------------------------------------------------------------------
+ //   |  BT CLR    | BT SEL0    | BT SEL1     | BT SEL2    | BT SEL3    | BT SEL4  |                 |                |               |               |               |                |      |
+ //   | OUT TOG    | OUT USB    | OUT BLE     |            |            |          |                 |                |               |               |               |                |      |
+ //   |            |            |             |            |            |          |                 |     Eff+       |      HUI      |      SAI      |      BRI      |      SPI       |      |
+ //   |            |            |             |            |            |          |                 |     Eff-       |      HUD      |      SAD      |      BRD      |      SPD       | ENT  |
+ //   |            |            |             |            |            |          |                 |  RGB TOGGLE    |               |               |               |                |      |
                      bindings = <
-       &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4         &trans           &trans          &trans          &trans          &trans           &trans
-       &out OUT_TOG &out OUT_USB &out OUT_BLE  &trans       &trans       &trans               &trans           &trans          &trans          &trans          &trans           &trans
-       &trans       &trans       &trans        &trans       &trans       &trans               &rgb_ug RGB_EFF  &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI  &trans
-       &trans       &trans       &trans        &trans       &trans       &trans               &rgb_ug RGB_EFR  &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD  &trans
-       &trans       &trans       &trans        &trans       &trans       &ext_power EP_TOG    &rgb_ug RGB_TOG  &trans          &trans          &trans          &trans           &trans
+       &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 &trans           &trans          &trans          &trans          &trans           &trans
+       &out OUT_TOG &out OUT_USB &out OUT_BLE  &trans       &reset       &trans                       &trans           &trans          &trans          &trans          &trans           &trans
+       &trans       &trans       &trans        &trans       &trans       &trans                       &rgb_ug RGB_EFF  &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI  &trans
+       &trans       &trans       &trans        &trans       &trans       &bootloader                  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD  &trans
+       &trans       &trans       &trans        &trans       &trans       &ext_power EP_TOG            &rgb_ug RGB_TOG  &trans          &trans          &trans          &trans           &trans
                      >;
               };
        };
