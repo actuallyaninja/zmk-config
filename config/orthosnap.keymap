@@ -44,7 +44,7 @@
  //    |  `       |  F1     |  F2   |  F3     |  F4     |  F5  |             |  F6    |   F7    |   F8     |   F9    |   F10   |       |
  //    |          |         |       |         |         |      |             |        |         |          |   F11   |   F12   |       |
  //    |          |         |       |         |         |      |             |        |  LEFT   |   UP     |  DOWN   |  RIGHT  |       |
- //    |          |         |       |         |         |      |             |        |  HOME   |  PG UP   |  PG DN  |  END    |       |
+ //    |          |         |       |         |         |      |             |        |  HOME   |  PG UP   |  PG DN  |  END    | Enter |
  //    |          |         |       |         |         |      |             |        |         |  HOME    |  PG UP  |  PG DN  |  END  |
                      bindings = <
        &kp GRAVE   &kp F1   &kp F2   &kp F3    &kp F4    &kp F5              &kp F6    &kp F7    &kp F8     &kp F9    &kp F10   &trans
@@ -72,9 +72,9 @@
               BTLAYER_layer {
  //   -------------------------------------------------------------------------------------          ------------------------------------------------------------------------------------------
  //   |  BT CLR    | BT SEL0    | BT SEL1     | BT SEL2    | BT SEL3    |     BT SEL4     |          |                |               |               |               |                |      |
- //   | OUT TOG    | OUT USB    | OUT BLE     |            |            |                 |          |                |               |               |               |                |      |
+ //   | OUT TOG    | OUT USB    | OUT BLE     |            | Reset      |                 |          |                |               |               |               |                |      |
  //   |            |            |             |            |            |                 |          |     Eff+       |      HUI      |      SAI      |      BRI      |      SPI       |      |
- //   |            |            |             |            |            |                 |          |     Eff-       |      HUD      |      SAD      |      BRD      |      SPD       |      |
+ //   |            |            |             |            |            |   Bootloader    |          |     Eff-       |      HUD      |      SAD      |      BRD      |      SPD       |      |
  //   |            |            |             |            |            |   Ext Pow Tog   |          |  RGB Toggle    |               |               |               |                |      |
                      bindings = <
        &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                 &trans           &trans          &trans          &trans          &trans           &trans
