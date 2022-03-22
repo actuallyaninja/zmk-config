@@ -17,7 +17,8 @@
  #define BTLAYER 3
 
 &kscan0 {
-    debounce-period = <12>;
+    debounce-press-ms = <10>;
+    debounce-release-ms = <10>;
 };
 
 / {
