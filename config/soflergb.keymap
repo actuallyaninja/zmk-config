@@ -68,7 +68,7 @@
 &trans     &trans           &trans          &trans          &reset          &bootloader                                                &trans    &trans    &trans    &trans    &trans    &trans
 &trans     &rgb_ug RGB_EFF  &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI                                            &trans    &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &trans
 &trans     &rgb_ug RGB_EFR  &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD  &ext_power EP_TOG      &ext_power EP_TOG  &trans    &kp HOME  &kp PG_UP &kp PG_DN &kp END   &trans
-                            &trans          &trans          &trans          &trans           &rgb_ug RGB_TOG        &rgb_ug RGB_TOG    &trans    &trans    &trans    &transe
+                            &trans          &trans          &trans          &trans           &rgb_ug RGB_TOG        &rgb_ug RGB_TOG    &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
