@@ -21,6 +21,6 @@
 		;
 };
 
-/*&right_encoder {
+&right_encoder { // not working -- this is a known issue in zmk
 	status = "okay";
-};*/
+};
