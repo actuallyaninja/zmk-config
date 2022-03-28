@@ -57,17 +57,17 @@
 
         raise_layer {
 // --------------------------------------------------------------------------------------------------------------------------------------
-// |BTCLR| BT1      | BT2     |  BT3    |  BT4    |  BT5    |                              |      |      |       |      |       |       |
-// |     |          |         |         |  Reset  | Bootldr |                              |      |      |       |      |       |       |
-// |     | RGB_EFF  | RGB_HUI | RGB_SAI | RGB_BRI | RGB_SPI |                              |      |   <- |   ^   |   v  |   ->  |       |
-// |     | RGB_EFR  | RGB_HUD | RGB_SAD | RGB_BRD | RGB_SPD |ExtPwr|                |ExtPwr|      | Home | PgUp  | PgDn |  End  |       |
-//                  |         |         |         |         |RGBTog|                |RGBTog|      |      |       |      |
+// |BTCLR | BT0      | BT1     |  BT2    |  BT3    |  BT4    |                              |      |      |       |      |       |       |
+// |OUTTOG|          |         |         |  Reset  | Bootldr |                              |      |      |       |      |       |       |
+// |      | RGB_EFF  | RGB_HUI | RGB_SAI | RGB_BRI | RGB_SPI |                              |      |   <- |   ^   |   v  |   ->  |       |
+// |      | RGB_EFR  | RGB_HUD | RGB_SAD | RGB_BRD | RGB_SPD |ExtPwr|                |ExtPwr|      | Home | PgUp  | PgDn |  End  |       |
+//                   |         |         |         |         |RGBTog|                |RGBTog|      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                               &trans    &trans    &trans    &trans    &trans    &trans
-&trans     &trans           &trans          &trans          &reset          &bootloader                                                &trans    &trans    &trans    &trans    &trans    &trans
-&trans     &rgb_ug RGB_EFF  &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI                                            &trans    &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &trans
-&trans     &rgb_ug RGB_EFR  &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD  &ext_power EP_TOG      &ext_power EP_TOG  &trans    &kp HOME  &kp PG_UP &kp PG_DN &kp END   &trans
-                            &trans          &trans          &trans          &trans           &rgb_ug RGB_TOG        &rgb_ug RGB_TOG    &trans    &trans    &trans    &trans
+&bt BT_CLR   &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                               &trans    &trans    &trans    &trans    &trans    &trans
+&out OUT_TOG &trans           &trans          &trans          &reset          &bootloader                                                &trans    &trans    &trans    &trans    &trans    &trans
+&trans       &rgb_ug RGB_EFF  &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI                                            &trans    &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT &trans
+&trans       &rgb_ug RGB_EFR  &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD  &ext_power EP_TOG      &ext_power EP_TOG  &trans    &kp HOME  &kp PG_UP &kp PG_DN &kp END   &trans
+                              &trans          &trans          &trans          &trans           &rgb_ug RGB_TOG        &rgb_ug RGB_TOG    &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
