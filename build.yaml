@@ -12,8 +12,12 @@
 #     shield: reviung41
 #
 ---
-include:
-  - board: nice_nano_v2
-    shield: cornergb_left
-  - board: nice_nano_v2
-    shield: cornergb_right
+board: [ "nice_nano_v2" ]
+shield: [ "corne_left", "corne_right", "orthosnap" ]
+# include:
+#  - board: nice_nano_v2
+#   shield: cornergb_left
+#  - board: nice_nano_v2
+#    shield: cornergb_right
+#  - board: nice_nano_v2
+#    shield: orthosnap
