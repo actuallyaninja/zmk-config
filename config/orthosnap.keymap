@@ -35,6 +35,12 @@
    };
 };
 
+/ {
+   chosen {
+      zmk,underglow = &led_strip;
+   };
+};
+
 
  #define DEFAULT 0
  #define LOWER  1
