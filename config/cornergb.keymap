@@ -43,16 +43,16 @@
                 };
 
                 raise_layer {
-// ------------------------------------------------------------------------------
-// |      |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
-// |      |     |     |     |     |     |   |  +  |     |  {  |  }  | "|" |  `  |
-// |      |     |     |     |     |     |   |  =  |  ~  |  [  |  ]  |  \  |     | // TODO: Fix this row when &mkp is committed
-//                    |     |     |     |   | ENT |     | ALT |
+// ---------------------------------------------------------------------------------
+// |      |  !  |  @  |  #  |  $  |  %  |      |  ^  |  &  |  *  |  (  |  )  | DEL |
+// |      |     |     |     |     |  `  |      |  |  |  -  |  =  |  [  |  ]  |     |
+// |      |     |     |     |     |  ~  |      |  \  |  _  |  +  |  {  |  }  |     | 
+//                    |     |     |     |      |     |     |     |
                         bindings = <
-   &kp ESC   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
-   &trans    &trans    &trans  &trans    &trans    &kp UNDER   &kp PLUS  &trans    &kp LBRC        &kp RBRC &kp PIPE &kp GRAVE
-   &trans    &trans    &trans  &trans    &trans    &kp MINUS   &kp EQUAL &kp TILDE &kp LBKT        &kp RBKT &kp BSLH &trans
-                               &mo 4     &trans    &trans      &trans    &mo 3     &trans
+   &kp ESC   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT        &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
+   &trans    &trans    &trans  &trans    &trans    &kp GRAVE        &kp PIPE  &kp MINUS &kp EQUAL       &kp LBKT &kp RBKT &trans
+   &trans    &trans    &trans  &trans    &trans    &kp TILDE        &kp BSLH  &kp UNDER &kp PLUS        &kp LBRC &kp RBRC &trans
+                               &mo 4     &trans    &trans           &trans    &trans    &trans
                         >;
                 };
 
@@ -77,7 +77,7 @@
 // |      |     |     |     |     |     |             |     |     |     |     |     |     |
 //                    |     |     |     |             |     |     |     |
                         bindings = <
-   &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &reset                  &trans  &trans &trans &trans &trans &reset
+   &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &reset                    &trans  &trans &trans &trans &trans &reset
    &out OUT_TOG      &rgb_ug RGB_EFF &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI &rgb_ug RGB_SPI         &trans  &trans &trans &trans &trans &trans
    &ext_power EP_TOG &rgb_ug RGB_EFR &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD &rgb_ug RGB_SPD         &trans  &trans &trans &trans &trans &bootloader
                                                      &trans          &trans          &rgb_ug RGB_TOG         &trans  &trans &trans
