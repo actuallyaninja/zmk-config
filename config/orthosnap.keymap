@@ -90,7 +90,7 @@
        &trans      &trans   &trans   &trans    &trans    &trans              &trans    &trans    &trans     &kp F11   &kp F12   &trans    &trans
        &trans      &trans   &trans   &trans    &trans    &trans              &trans    &kp LEFT  &kp UP     &kp DOWN  &kp RIGHT &trans    &trans
        &trans      &trans   &trans   &trans    &trans    &trans              &trans    &kp HOME  &kp PG_UP  &kp PG_DN &kp END   &kp ENTER &trans
-       &mo 3       &trans   &trans   &trans    &trans    &trans              &trans    &trans    &kp HOME   &kp PG_UP &kp PG_DN &kp END   &kp C_MUTE
+       &trans      &trans   &trans   &trans    &mo 3     &trans              &trans    &trans    &kp HOME   &kp PG_UP &kp PG_DN &kp END   &kp C_MUTE
                      >;
               };
               raise_layer {
@@ -105,7 +105,7 @@
        &trans      &trans       &trans           &trans          &trans       &trans                     &trans  &kp UNDER &kp PLUS   &kp LBRC     &kp RBRC   &trans &trans
        &trans      &kp LS(HOME) &kp LC(LS(HOME)) &kp LC(LS(END)) &kp LS(END)  &trans                     &trans  &kp MINUS &kp EQUAL  &kp LBKT     &kp RBKT   &trans &trans
        &trans      &trans       &trans           &trans          &trans       &trans                     &trans  &kp UNDER &kp PLUS   &kp LBRC     &kp RBRC   &trans &trans
-       &mo 3       &trans       &trans           &trans          &trans       &trans                     &trans  &trans    &trans     &trans       &trans     &trans &kp C_MUTE
+       &trans      &trans       &trans           &mo 3           &trans       &trans                     &trans  &trans    &trans     &trans       &trans     &trans &kp C_MUTE
                      >;
               };
               BTLAYER_layer {
