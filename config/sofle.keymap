@@ -87,7 +87,7 @@
                     &trans    &trans      &trans    &trans    &trans            &trans      &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp TAB LS(TAB) &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN) &inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
