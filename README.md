@@ -15,7 +15,7 @@ Other boards:
 
 - Ergo42, a split 4x7 (x2) ortholinear board designed by Biacco42
 - May pad, a numpad designed by u/reggatronics
-- Sofle Rev2 w/ RBG (slight modification from the existing Sofle ZMK sheild config to add RGB config)
+- Sofle Rev2 w/ RBG (KeyHive version, not compatible with original Sofle)
 - orthosnap: Adafruit NeoKey 5x6 Ortho Snap-apart (x2) wired to a single nice!nano controller
 - A hand-wired board using the plates from the Keeb.io Sinc 75% split staggered keyboard
 
@@ -24,3 +24,4 @@ Other board(s) that I have my own config for that were already part of the main 
 - Helix
 - Lily58
 - Corne
+- Sofle
