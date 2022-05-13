@@ -51,6 +51,17 @@
 /* END temporary RGB support section */
 
 / {
+
+    behaviors {
+        altf4: alt_f4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_F4";
+            #binding-cells = <0>;
+            bindings = <&kp N4>, <&kp LA(F4)>;
+            mods = <(MOD_LALT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -62,7 +73,7 @@
 // | CTRL  |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               |CTRL | ALT  | GUI  | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
             bindings = < 
-&kp ESC   &kp N1 &kp N2    &kp N3   &kp N4    &kp N5                        &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp BSPC
+&kp ESC   &kp N1 &kp N2    &kp N3   &altf4    &kp N5                        &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp BSPC
 &kp TAB   &kp Q  &kp W     &kp E    &kp R     &kp T                         &kp Y  &kp U     &kp I     &kp O    &kp P    &kp DEL
 &kp LSHFT &kp A  &kp S     &kp D    &kp F     &kp G                         &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
 &kp LCTRL &kp Z  &kp X     &kp C    &kp V     &kp B  &kp C_MUTE   &none     &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
