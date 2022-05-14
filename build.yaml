@@ -12,7 +12,7 @@
 #     shield: reviung41
 #
 ---
-board: [ "nice_nano_v2", "nice_nano" ]
+board: [ "nice_nano_v2"] #, "nice_nano" ]
 shield: [ "settings_reset", "sofle_left", "sofle_right" ] #"cornergb_left", "cornergb_right", "orthosnap" , "soflergb_left" , "soflergb_right", "lily58_left", "lily58_right", "sofle_left", "sofle_right", "maypadnicenano"]
 # include:
 #  - board: nice_nano_v2
