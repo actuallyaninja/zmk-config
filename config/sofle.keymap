@@ -98,7 +98,7 @@
                     &kp PSCRN &trans      &trans    &trans    &trans            &trans      &trans    &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN) &inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LEFT RIGHT>;
         };
 
         raise_layer {
