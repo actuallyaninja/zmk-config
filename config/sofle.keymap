@@ -106,8 +106,8 @@
 // | `     |  F1 |  F2 |  F3  |  F4  |  F5  |                                   |      |       |       |      |       |       |
 // |       |     |     |      |      |      |                                   |      |       |       |      |       |       |
 // |       |     |     |      |      |      |                                   |      |   <-  |   ^   |   v  |   ->  |       |
-// |       |     |     |      |      |      |      |      |       |      |      | Home | PgUp  | PgDn  |  End |       |
-//                     |      |      |      |      |      |       |      |      |      |       |       |
+// |       |     |     |      |      |      |      |                     |      |      |  Home | PgUp  | PgDn |  End  |       |
+//               |     |      |      |      |      |                     |      |      |       |       |      |
             bindings = <
 &kp GRAVE &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                                   &trans    &trans    &trans    &trans    &trans    &trans
 &trans    &trans    &trans    &trans      &trans    &trans                                   &trans    &trans    &trans    &trans    &trans    &trans
