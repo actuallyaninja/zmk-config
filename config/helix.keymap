@@ -16,21 +16,16 @@
  #define RAISE  2
  #define BTLAYER 3
 
-&kscan0 {
-    debounce-press-ms = <10>;
-    debounce-release-ms = <10>;
-};
-
 / {
        
        behaviors {
-        altf4: alt_f4 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_F4";
-            #binding-cells = <0>;
-            bindings = <&kp N4>, <&kp LA(F4)>;
-            mods = <(MOD_LALT)>;
-        };
+              altf4: alt_f4 {
+              compatible = "zmk,behavior-mod-morph";
+              label = "ALT_F4";
+              #binding-cells = <0>;
+              bindings = <&kp N4>, <&kp LA(F4)>;
+              mods = <(MOD_LALT)>;
+              };
        };
        
        keymap {
@@ -48,7 +43,7 @@
        &kp TAB    &kp Q    &kp W     &kp E     &kp R     &kp T                                &kp Y     &kp U     &kp I     &kp O      &kp P     &kp DEL
        &mo RAISE  &kp A    &kp S     &kp D     &kp F     &kp G                                &kp H     &kp J     &kp K     &kp L      &kp SEMI  &kp SQT
        &kp LSHFT  &kp Z    &kp X     &kp C     &kp V     &kp B     &kp MINUS        &kp EQUAL &kp N     &kp M     &kp COMMA &kp PERIOD &kp SLASH &kp RSHFT
-       &kp LCTRL  &kp LGUI &kp HOME  &kp END   &kp LALT  &mo LOWER &kp ENTER        &kp SPACE &mo LOWER &kp RCTRL &kp LEFT   &kp UP    &kp DOWN  &kp RIGHT
+       &kp LCTRL  &kp LGUI &kp HOME  &kp END   &kp LALT  &mo LOWER &kp ENTER        &kp SPACE &mo RAISE &kp RCTRL &kp LEFT   &kp UP    &kp DOWN  &kp RIGHT
                      >;
               };
               lower_layer {
