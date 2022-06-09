@@ -80,8 +80,8 @@
                  &kp LCTRL &kp LALT &kp LGUI  &mo 1  &kp RET      &kp SPACE       &mo 2  &kp RALT  &kp RCTL  &kp ENTER
             >;
 
-            //sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;  // for the regular full sized encoders
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; // for the backwards encoders on the choc sofle 
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;  // for the regular full sized encoders
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>; // for the backwards encoders on the choc sofle 
         };
 
         lower_layer {
@@ -99,8 +99,8 @@
                     &kp PSCRN &trans      &trans    &trans    &trans            &trans      &trans    &trans    &trans    &trans
             >;
 
-            //sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN) &inc_dec_kp RIGHT LEFT>;  // regular encoders
-            sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LEFT RIGHT>; // backwards encoders (choc sofle)
+            sensor-bindings = <&inc_dec_kp LC(PG_UP) LC(PG_DN) &inc_dec_kp RIGHT LEFT>;  // regular encoders
+            //sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp LEFT RIGHT>; // backwards encoders (choc sofle)
         };
 
         raise_layer {
@@ -118,8 +118,8 @@
                     &trans    &trans      &trans    &trans    &trans                 &trans  &trans    &trans    &trans    &trans
             >;
             
-            //sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>; // regular encoders
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp PG_DN PG_UP>; // backwards encoders
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>; // regular encoders
+            //sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp PG_DN PG_UP>; // backwards encoders
         };
 
         bt_layer {
@@ -137,8 +137,8 @@
                               &ext_power EP_TOG &trans          &trans          &trans           &rgb_ug RGB_TOG        &rgb_ug RGB_TOG    &trans    &trans    &trans    &trans
             >;
 
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>; // regular encoders
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>; // backwards encoders
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>; // regular encoders
+            //sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>; // backwards encoders
         };
     };
 };
