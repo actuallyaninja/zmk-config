@@ -13,11 +13,7 @@
 #
 # ---
 board: [ "nice_nano_v2"]
-shield: [ "settings_reset", "sofle_left", "sofle_right", "soflergb_left", "soflergb_right" ] #"cornergb_left", "cornergb_right", "orthosnap" , "lily58_left", "lily58_right", "sofle_left", "sofle_right", "maypadnicenano"]
+shield: [ "settings_reset", "sofle_left", "sofle_right" ] #"cornergb_left", "cornergb_right", "orthosnap" , "lily58_left", "lily58_right", "sofle_left", "sofle_right", "maypadnicenano"]
 include:
- - board: nice_nano
-   shield: helix_left
- - board: nice_nano
-   shield: helix_right
  - board: nice_nano
    shield: settings_reset
