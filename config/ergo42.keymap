@@ -64,7 +64,7 @@
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
   // |      |      |      |      |      |      |      |   |      |      | LEFT |  UP  | DOWN | RIGHT|      |
   // |------+------+------+------+------+------+------|   |------|------+------+------+------+------+------|
-  // |      |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
+  // |      |      |      |      |      |      |      |   |      |      | HOME | PGUP | PGDN | END  |      |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
   // |  BT  |      |      |      |      |      |      |   |      |      |      | HOME | PGUP | PGDN | END  |
   // `------------------------------------------------'   `------------------------------------------------'
@@ -73,7 +73,7 @@
             bindings = <
 &trans  &kp EXCL &kp AT  &kp HASH &kp DOLLAR &kp PERCENT &trans  /**/ &trans  &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR   &trans
 &trans  &trans   &trans  &trans   &trans     &trans      &trans  /**/ &trans  &trans    &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT  &trans
-&trans  &trans   &trans  &trans   &trans     &trans      &trans  /**/ &trans  &trans    &trans    &trans    &trans    &trans     &trans
+&trans  &trans   &trans  &trans   &trans     &trans      &trans  /**/ &trans  &trans    &kp HOME  &kp PG_UP &kp PG_DN &kp END    &trans
 &mo 3   &trans   &trans  &trans   &trans     &trans      &trans  /**/ &trans  &trans    &trans    &kp HOME  &kp PG_UP &kp PG_DN  &kp END 
             >;
         };
