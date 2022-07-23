@@ -60,21 +60,21 @@
 
   // SYMB
   // ,------------------------------------------------.   ,------------------------------------------------.
-  // |      |   !  |   @  |   #  |   $  |   %  |      |   |      |   ^  |   &  |   *  |   (  |   )  | Del  |
+  // |      |   !  |   @  |   #  |   $  |   %  |      |   | Vol+ |   ^  |   &  |   *  |   (  |   )  | Del  |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
-  // |      |      |      |      |      |      |      |   |      |      | LEFT |  UP  | DOWN | RIGHT|      |
+  // |      |      |      |      |      |      |      |   | Vol- |      | LEFT |  UP  | DOWN | RIGHT|      |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
-  // |      |      |      |      |      |      |      |   |      |      | HOME | PGUP | PGDN | END  |      |
+  // |      |      |      |      |      |      |      |   | Mute |      | HOME | PGUP | PGDN | END  |      |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
   // |  BT  |      |      |      |      |      |      |   |      |      |      | HOME | PGUP | PGDN | END  |
   // `------------------------------------------------'   `------------------------------------------------'
   //
         symb_layer {
             bindings = <
-&trans  &kp EXCL &kp AT  &kp HASH &kp DOLLAR &kp PERCENT &trans  /**/ &trans  &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR   &kp DELETE
-&trans  &trans   &trans  &trans   &trans     &trans      &trans  /**/ &trans  &trans    &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT  &trans
-&trans  &trans   &trans  &trans   &trans     &trans      &trans  /**/ &trans  &trans    &kp HOME  &kp PG_UP &kp PG_DN &kp END    &trans
-&mo 3   &trans   &trans  &trans   &trans     &trans      &trans  /**/ &trans  &trans    &trans    &kp HOME  &kp PG_UP &kp PG_DN  &kp END 
+&trans  &kp EXCL &kp AT  &kp HASH &kp DOLLAR &kp PERCENT &trans  /**/ &kp C_VOL_UP  &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR   &kp DELETE
+&trans  &trans   &trans  &trans   &trans     &trans      &trans  /**/ &kp C_VOL_DN  &trans    &kp LEFT  &kp UP    &kp DOWN  &kp RIGHT  &trans
+&trans  &trans   &trans  &trans   &trans     &trans      &trans  /**/ &kp C_MUTE    &trans    &kp HOME  &kp PG_UP &kp PG_DN &kp END    &trans
+&mo 3   &trans   &trans  &trans   &trans     &trans      &trans  /**/ &trans        &trans    &trans    &kp HOME  &kp PG_UP &kp PG_DN  &kp END 
             >;
         };
 
