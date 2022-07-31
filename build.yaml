@@ -17,4 +17,5 @@ shield: [ "settings_reset", "sofle_left", "sofle_right", "ergo42_left", "ergo42_
 include:
  - board: bluemicro840_v1
    shield: "viterbi_left"
+ - board: bluemicro840_v1
    shield: "viterbi_right"
