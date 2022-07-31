@@ -37,7 +37,7 @@
 &kp TAB   &kp Q      &kp W     &kp E     &kp R     &kp T   &kp MINUS   /**/ &kp PG_DN  &kp Y    &kp U     &kp I      &kp O     &kp P     &kp DEL 
 &kp GRAVE &kp A      &kp S     &kp D     &kp F     &kp G   &kp BSLH    /**/ &kp HOME   &kp H    &kp J     &kp K      &kp L     &kp SEMI  &kp SQT   
 &kp LSHFT &kp Z      &kp X     &kp C     &kp V     &kp B   &mo 2       /**/ &kp END    &kp N    &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT 
-&kp LCTRL &kp LGUI   &kp LBKT  &kp RBKT  &kp LALT  &mo 1   &kp ENTER   /**/ &kp SPACE  &mo 2    &kp RCTRL &kp LEFT   &kp UP    &kp DOWN  &kp RIGHT  
+&kp LCTRL &kp LGUI   &kp LBKT  &kp RBKT  &kp LALT  &mo 1   &kp ENTER   /**/ &kp SPACE  &mo 1    &kp RCTRL &kp LEFT   &kp UP    &kp DOWN  &kp RIGHT  
             >;
         };
 
@@ -46,21 +46,21 @@
   // |      |  F1  |  F2  |  F3  |  F4  |  F5  |      |   |      |  F6  |  F7  |  F8  |  F9  | F10  |      |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
   // |      |      |      |      |      |      |      |   |      |      |      |      | F11  | F12  |      |
-  // |------+------+------+------+------+------+------|   |-------------+------+------+------+------+------|
-  // |      |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
-  // |------+------+------+------+------+------+------|   |------|------+------+------+------+------+------|
-  // | CAPS |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
+  // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
+  // |      |      |      |      |      |      |      |   |      |      |  <-  |  ^   |  v   |  ->  |      |
+  // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
+  // | CAPS |      |      |      |      |      |      |   |      |      | Home | PgUp | PgDn | End  |      |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
   // | BT   |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
   // `------------------------------------------------'   `------------------------------------------------'
   //
         meta_layer {
             bindings = <
-&trans    &kp F1   &kp F2  &kp F3  &kp F4   &kp F5  &trans   /**/ &trans   &kp F6   &kp F7   &kp F8  &kp F9    &kp F10   &trans
-&trans    &trans   &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &kp F11   &kp F12   &trans
-&trans    &trans   &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &trans    &trans
-&kp CAPS  &trans   &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &trans    &trans
-&mo 3     &trans   &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans  &trans    &trans    &trans
+&trans    &kp F1   &kp F2  &kp F3  &kp F4   &kp F5  &trans   /**/ &trans   &kp F6   &kp F7   &kp F8     &kp F9     &kp F10   &trans
+&trans    &trans   &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans     &kp F11    &kp F12   &trans
+&trans    &trans   &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &kp LEFT &kp UP     &kp DOWN   &kp RIGHT &trans
+&kp CAPS  &trans   &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &kp HOME &kp PG_UP  &kp PG_DN  &kp END   &trans
+&mo 3     &trans   &trans  &trans  &trans   &trans  &trans   /**/ &trans   &trans   &trans   &trans     &trans     &trans    &trans
             >;
         };
 
