@@ -28,7 +28,7 @@
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
   // | LSft |   Z  |   X  |   C  |   V  |  B   |  NUM |   | End  |   N  |   M  |   ,  |   .  |   /  | RSft | 
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
-  // | LCtrl| LGui |   [  |   ]  | LAlt | META |Enter |   |Space | SYMB | RCtrl| Left |  Up  | Down | Right|
+  // | LCtrl| LGui |   [  |   ]  | LAlt | LYR2 |Enter |   |Space | SYMB | RCtrl| Left |  Up  | Down | Right|
   // `------------------------------------------------'   `------------------------------------------------'
   //
         default_layer {
@@ -36,8 +36,31 @@
 &kp ESC   &kp N1     &kp N2    &kp N3    &altf4    &kp N5  &kp EQUAL   /**/ &kp PG_UP  &kp N6   &kp N7    &kp N8     &kp N9    &kp N0    &kp BACKSPACE
 &kp TAB   &kp Q      &kp W     &kp E     &kp R     &kp T   &kp MINUS   /**/ &kp PG_DN  &kp Y    &kp U     &kp I      &kp O     &kp P     &kp DEL 
 &kp GRAVE &kp A      &kp S     &kp D     &kp F     &kp G   &kp BSLH    /**/ &kp HOME   &kp H    &kp J     &kp K      &kp L     &kp SEMI  &kp SQT   
-&kp LSHFT &kp Z      &kp X     &kp C     &kp V     &kp B   &mo 2       /**/ &kp END    &kp N    &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT 
-&kp LCTRL &kp LGUI   &kp LBKT  &kp RBKT  &kp LALT  &mo 1   &kp ENTER   /**/ &kp SPACE  &mo 1    &kp RCTRL &kp LEFT   &kp UP    &kp DOWN  &kp RIGHT  
+&kp LSHFT &kp Z      &kp X     &kp C     &kp V     &kp B   &mo 3       /**/ &kp END    &kp N    &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT 
+&kp LCTRL &kp LGUI   &kp LBKT  &kp RBKT  &kp LALT  &mo 1   &kp ENTER   /**/ &kp SPACE  &mo 2    &kp RCTRL &kp LEFT   &kp UP    &kp DOWN  &kp RIGHT  
+            >;
+        };
+
+  // Layer 2
+  // ,------------------------------------------------.   ,------------------------------------------------.
+  // |      |  F1  |  F2  |  F3  |  F4  |  F5  | Vol+ |   |      |  F6  |  F7  |  F8  |  F9  | F10  |      |
+  // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
+  // |      |      |      |      |      |      | Vol- |   |      |      |      |      | F11  | F12  |      |
+  // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
+  // |      |      |      |      |      |      | Mute |   |      |  \   |  -   |  =   |  {   |   }  |      |
+  // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
+  // |      |      |      |      |      |      |      |   |      |  |   |  _   |  +   |  [   |   ]  |      |
+  // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
+  // |  BT  |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
+  // `------------------------------------------------'   `------------------------------------------------'
+  //
+        second_layer {
+            bindings = <
+&trans  &kp F1   &kp F2    &kp F3   &kp F4  &kp F5  &kp C_VOL_UP /**/ &trans   &kp F6    &kp F7     &kp F8     &kp F9    &kp F10   &trans
+&trans  &trans   &trans    &trans   &trans  &trans  &kp C_VOL_DN /**/ &trans   &trans    &trans     &trans     &kp F11   &kp F12   &trans
+&trans  &trans   &trans    &trans   &trans  &trans  &kp C_MUTE   /**/ &trans   &kp BSLH  &kp MINUS  &kp EQUAL  &kp LBRC  &kp RBRC  &trans
+&trans  &trans   &trans    &trans   &trans  &trans  &trans       /**/ &trans   &kp PIPE  &kp UNDER  &kp PLUS   &kp LBKT  &kp RBKT  &trans
+&mo 4   &trans   &trans    &trans   &trans  &trans  &trans       /**/ &trans   &trans    &trans     &trans     &trans    &trans    &trans
             >;
         };
 
@@ -49,7 +72,7 @@
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
   // |      |      |      |      |      |      | Mute |   |      |      |  <-  |  ^   |  v   |  ->  |      |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
-  // | CAPS |      |      |      |      |      |      |   |      |      | Home | PgUp | PgDn | End  |      |
+  // |      |      |      |      |      |      |      |   |      |      | Home | PgUp | PgDn | End  |      |
   // |------+------+------+------+------+------+------|   |------+------+------+------+------+------+------|
   // | BT   |      |      |      |      |      |      |   |      |      |      |      |      |      |      |
   // `------------------------------------------------'   `------------------------------------------------'
@@ -59,8 +82,8 @@
 &trans    &kp F1   &kp F2  &kp F3  &kp F4   &kp F5  &kp C_VOL_UP  /**/ &trans   &kp F6   &kp F7   &kp F8     &kp F9     &kp F10   &trans
 &trans    &trans   &trans  &trans  &trans   &trans  &kp C_VOL_DN  /**/ &trans   &trans   &trans   &trans     &kp F11    &kp F12   &trans
 &trans    &trans   &trans  &trans  &trans   &trans  &kp C_MUTE    /**/ &trans   &trans   &kp LEFT &kp UP     &kp DOWN   &kp RIGHT &trans
-&kp CAPS  &trans   &trans  &trans  &trans   &trans  &trans        /**/ &trans   &trans   &kp HOME &kp PG_UP  &kp PG_DN  &kp END   &trans
-&mo 3     &trans   &trans  &trans  &trans   &trans  &trans        /**/ &trans   &trans   &trans   &trans     &trans     &trans    &trans
+&trans    &trans   &trans  &trans  &trans   &trans  &trans        /**/ &trans   &trans   &kp HOME &kp PG_UP  &kp PG_DN  &kp END   &trans
+&mo 4     &trans   &trans  &trans  &trans   &trans  &trans        /**/ &trans   &trans   &trans   &trans     &trans     &trans    &trans
             >;
         };
 
@@ -83,7 +106,7 @@
 &trans  &trans   &trans    &trans   &trans     &trans      &trans /**/ &trans    &trans   &kp N7    &kp N8   &kp N9   &trans    &trans
 &trans  &trans   &trans    &trans   &trans     &trans      &trans /**/ &trans    &trans   &kp N4    &kp N5   &kp N6   &trans    &trans
 &trans  &trans   &trans    &trans   &trans     &trans      &trans /**/ &trans    &trans   &kp N1    &kp N2   &kp N3   &trans    &trans
-&mo 3   &trans   &trans    &trans   &trans     &trans      &trans /**/ &kp N0    &trans   &trans    &trans   &trans   &trans    &trans
+&mo 4   &trans   &trans    &trans   &trans     &trans      &trans /**/ &kp N0    &trans   &trans    &trans   &trans   &trans    &trans
             >;
         };
 
