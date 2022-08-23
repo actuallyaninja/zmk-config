@@ -98,7 +98,7 @@
 &trans    &trans    &trans    &trans      &trans    &trans                                  &trans    &trans    &trans    &kp F11   &kp F12   &kp DEL
 &trans    &trans    &trans    &trans      &trans    &trans                                  &kp BSLH  &kp MINUS &kp EQUAL &kp LBRC  &kp RBRC  &trans  
 &mo 3     &trans    &trans    &trans      &trans    &trans    &rgb_ug RGB_TOG   &kp C_MUTE  &kp PIPE  &kp UNDER &kp PLUS  &kp LBKT  &kp RBKT  &trans
-                    &trans    &trans      &trans    &trans    &trans            &trans      &trans    &trans    &trans    &trans
+                    &kp PSCRN &trans      &trans    &trans    &trans            &trans      &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PG_DN) LC(PG_UP) &inc_dec_kp C_VOL_UP C_VOL_DN>;
