@@ -118,8 +118,8 @@
                     &trans    &trans      &trans    &trans    &trans                 &trans  &trans    &trans    &trans    &trans
             >;
             
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>; // regular encoders
-            //sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp PG_DN PG_UP>; // backwards encoders
+            //sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp PG_UP PG_DN>; // regular encoders
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT &inc_dec_kp PG_DN PG_UP>; // backwards encoders
         };
 
         bt_layer {
