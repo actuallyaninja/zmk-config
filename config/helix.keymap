@@ -57,7 +57,7 @@
        &trans      &trans   &trans   &trans    &trans    &trans                                &trans    &trans    &trans     &kp F11   &kp F12   &trans
        &trans      &trans   &trans   &trans    &trans    &kp TILDE                             &kp BSLH  &kp MINUS &kp EQUAL  &kp LBRC  &kp RBRC  &trans
        &trans      &trans   &trans   &trans    &trans    &kp GRAVE &kp C_VOL_DN  &kp C_VOL_UP  &kp PIPE  &kp UNDER &kp PLUS   &kp LBKT  &kp RBKT  &trans
-       &mo BTLAYER &trans   &trans   &trans    &trans    &trans    &kp C_MUTE    &kp C_MUTE    &trans    &trans    &trans     &trans    &trans    &trans
+       &mo BTLAYER &trans   &trans   &trans    &trans    &trans    &trans        &trans        &trans    &trans    &trans     &trans    &trans    &trans
                      >;
               };
               raise_layer {
@@ -102,7 +102,7 @@
      &out OUT_TOG &out OUT_USB     &out OUT_BLE    &trans          &trans          &trans                                          &trans  &trans  &trans  &trans  &trans  &trans
      &trans       &trans           &trans          &trans          &trans          &trans                                          &trans  &trans  &trans  &trans  &trans  &trans
      &trans       &trans           &trans          &trans          &trans          &trans          &trans                 &trans   &trans  &trans  &trans  &trans  &trans  &trans
-     &trans       &trans           &trans          &trans          &trans          &trans          &trans                 &trans   &trans  &trans  &trans  &trans  &trans  &trans
+     &trans       &trans           &trans          &trans          &trans          &trans          &kp C_MUTE             &trans   &trans  &trans  &trans  &trans  &trans  &trans
                      >;
               };
        };
