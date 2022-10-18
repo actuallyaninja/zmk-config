@@ -137,8 +137,8 @@
                               &ext_power EP_TOG &trans          &trans          &trans           &rgb_ug RGB_TOG        &rgb_ug RGB_TOG    &trans    &trans    &trans    &trans
             >;
 
-            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>; // regular encoders
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>; // backwards encoders
+            //sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_UP>; // regular encoders
+            sensor-bindings = <&inc_dec_kp TAB LS(TAB) &inc_dec_kp C_VOL_UP C_VOL_DN>; // backwards encoders
         };
     };
 };
