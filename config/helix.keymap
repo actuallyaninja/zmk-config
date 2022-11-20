@@ -92,13 +92,13 @@
  //    |      |      |      |      |      |      |                                          |      |      |      |  F11 |  F12 |      |
  //    |      |      |      |      |      |  ~   |                                          |  \   |  -   |  =   |  {   |   }  |      |
  //    |      |      |      |PSCRN |      |  `   | Vol- |                            | Vol+ |  |   |  _   |  +   |  [   |   ]  |      |
- //    |      |      |      |      |      |      | Mute |                            | Mute |      |      |      |      |      |      |
+ //    |      |      |      |      |      |      | Mute |                            |      |      |      |      |      |      |      |
                      bindings = <
        &kp GRAVE   &kp F1   &kp F2   &kp F3    &kp F4    &kp F5                                &kp F6    &kp F7    &kp F8     &kp F9    &kp F10   &trans
        &trans      &trans   &trans   &trans    &trans    &trans                                &trans    &trans    &trans     &kp F11   &kp F12   &trans
        &trans      &trans   &trans   &trans    &trans    &kp TILDE                             &kp BSLH  &kp MINUS &kp EQUAL  &kp LBRC  &kp RBRC  &trans
        &trans      &trans   &trans   &kp PSCRN &trans    &kp GRAVE &kp C_VOL_DN  &kp C_VOL_UP  &kp PIPE  &kp UNDER &kp PLUS   &kp LBKT  &kp RBKT  &trans
-       &mo BTLAYER &trans   &trans   &trans    &trans    &trans    &kp C_MUTE    &kp C_MUTE    &trans    &trans    &trans     &trans    &trans    &trans
+       &mo BTLAYER &trans   &trans   &trans    &trans    &trans    &kp C_MUTE    &trans        &trans    &trans    &trans     &trans    &trans    &trans
                      >;
               };
               raise_layer {
