@@ -10,6 +10,16 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+// for niceview spi
+&spi1 {
+	compatible = "nordic,nrf-spim";
+	status = "okay";
+	mosi-pin = <17>;
+	sck-pin = <20>;
+	// Unused pins, needed for SPI definition
+    miso-pin = <7>;
+};
+
 / {
 
     behaviors {
