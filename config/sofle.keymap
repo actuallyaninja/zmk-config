@@ -11,6 +11,12 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 / {
+	chosen {
+		zmk,display = &nice_view;
+	};
+};
+
+/ {
 
     behaviors {
         altf4: alt_f4 {
