@@ -11,21 +11,9 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
-# ---
 ---
-include:
-  - board: nice_nano_v2
-    shield: sofle_left nice_view_adapter nice_view
-  - board: nice_nano_v2
-    shield: sofle_right nice_view_adapter nice_view
-  - board: nice_nano_v2
-    shield: sofle_left
-  - board: nice_nano_v2
-    shield: sofle_right
-  - board: nice_nano_v2
-    shield: settings_reset
-# board: [ "nice_nano_v2" ]
-# shield: [ "settings_reset", "sofle_left nice_view_adapter nice_view", "sofle_left", "sofle_right nice_view_adapter nice_view", "sofle_right"] 
+board: [ "nice_nano_v2" ]
+shield: [ "settings_reset", "sofle_left nice_view_adapter nice_view", "sofle_left", "sofle_right nice_view_adapter nice_view", "sofle_right"] 
 # include:
 #  - board: nice_nano_v2
 #   shield: cornergb_left
@@ -33,3 +21,14 @@ include:
 #    shield: cornergb_right
 #  - board: nice_nano_v2
 #    shield: orthosnap
+# include:
+#   - board: nice_nano_v2
+#     shield: sofle_left nice_view_adapter nice_view
+#   - board: nice_nano_v2
+#     shield: sofle_right nice_view_adapter nice_view
+#   - board: nice_nano_v2
+#     shield: sofle_left
+#   - board: nice_nano_v2
+#     shield: sofle_right
+#   - board: nice_nano_v2
+#     shield: settings_reset
